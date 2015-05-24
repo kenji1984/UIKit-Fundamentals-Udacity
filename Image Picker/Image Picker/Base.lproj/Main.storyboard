@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Image_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-S7-Fic">
+                                <rect key="frame" x="253" y="285" width="101" height="30"/>
+                                <state key="normal" title="UIImagePicker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="experiment:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3fe-m0-cxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnv-QD-N9R">
+                                <rect key="frame" x="251" y="199" width="98" height="30"/>
+                                <state key="normal" title="UIActivityView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="activityControl:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cgs-FV-XAp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy7-Uo-kMw">
+                                <rect key="frame" x="261" y="369" width="79" height="30"/>
+                                <state key="normal" title="UIAlertView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertControl:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7MZ-m2-fBH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wnv-QD-N9R" secondAttribute="centerX" id="4Gr-zy-zzs"/>
+                            <constraint firstAttribute="centerY" secondItem="gMM-S7-Fic" secondAttribute="centerY" id="FRR-uw-8wa"/>
+                            <constraint firstAttribute="centerX" secondItem="gMM-S7-Fic" secondAttribute="centerX" constant="-4" id="ORk-2j-jlL"/>
+                            <constraint firstAttribute="centerY" secondItem="Yy7-Uo-kMw" secondAttribute="centerY" constant="-84" id="V8V-wE-VPV"/>
+                            <constraint firstAttribute="centerX" secondItem="Yy7-Uo-kMw" secondAttribute="centerX" constant="-0.5" id="oNN-Ai-lcg"/>
+                            <constraint firstAttribute="centerY" secondItem="wnv-QD-N9R" secondAttribute="centerY" constant="86" id="xxM-iU-8Uy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
